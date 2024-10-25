@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Urbanist";
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.header {
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+
+.header .main {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sitename h2 {
+    font-family: "Playfair Display";
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.nav a {
+    color: whitesmoke;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.nav li:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+}
+
+/* hero section  */
+
+.hero .main {
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: justify;
+}
+
+.hero .images {
+    display: flex;
+    gap: 10px;
+}
+
+.hero .images img {
+    width: 395px;
+}

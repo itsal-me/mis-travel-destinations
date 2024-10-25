@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Urbanist";
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.header {
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+
+.header .main {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sitename h2 {
+    font-family: "Playfair Display";
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.nav a {
+    color: whitesmoke;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.nav li:hover {
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+}
+
+/* destination */
+
+.destination .main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0;
+    text-align: justify;
+}
+
+/* destination cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    justify-content: space-between;
+    gap: 40px 0;
+}
+
+.card {
+    position: relative;
+    max-width: 380px;
+    max-height: 400px;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(137, 43, 226, 0.5);
+    transform: scale(0.95);
+}
+
+.card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.card .featured-img img {
+    width: 380px;
+    height: 400px;
+    border-radius: 12px;
+}
